@@ -1,2 +1,2 @@
-# Alura-React
+# Alura React
 Imersão React da Alura
