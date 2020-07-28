@@ -2,7 +2,7 @@
   "categorias": [{
       "titulo": "Front End",
       "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#BB6BD9",
+      "cor": "#663399",
 
       "videos": [{
           "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
@@ -40,7 +40,7 @@
     },
     {
       "titulo": "Back End",
-      "cor": "#00C86F",
+      "cor": "#00864A",
       "videos": [{
           "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
           "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
@@ -65,7 +65,7 @@
     },
     {
       "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "cor": "#1D4296",
 
       "videos": [{
           "titulo": "Teste de Turing",
@@ -87,7 +87,7 @@
     },
     {
       "titulo": "Filmes",
-      "cor": "orange",
+      "cor": "#ab6500",
       "videos": [{
           "titulo": "Interestellar",
           "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
@@ -108,7 +108,7 @@
     },
     {
       "titulo": "Games",
-      "cor": "red",
+      "cor": "#8E0D1C",
 
       "videos": [{
           "titulo": "Final Fantasy 7",
@@ -134,7 +134,7 @@
     },
     {
       "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
+      "cor": "#8A0075",
 
       "videos": [{
           "titulo": "Como estudar melhor?",
