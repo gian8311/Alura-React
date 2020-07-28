@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react"
 import dadosIniciais from "../../data/dados_iniciais.json"
-
+import RenderLoader from "../../components/RenderLoader"
 // import Footer from "./components/Footer"
 // import BannerMain from "./components/BannerMain"
 // import Carousel from "./components/Carousel"
@@ -11,14 +11,9 @@ const BannerMain = lazy(() => import("../../components/BannerMain"))
 const Carousel = lazy(() => import("../../components/Carousel"))
 const Menu = lazy(() => import("../../components/Menu"))
 
-const renderLoader = () => (
-  <div className="loading">
-    <p>Carregando...</p>
-  </div>
-)
 const Home = () => {
   return (
-    <Suspense fallback={renderLoader()}>
+    <Suspense fallback={RenderLoader()}>
       <div style={{ background: "#141414" }}>
         <Menu />
 
