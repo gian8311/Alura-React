@@ -1,22 +1,22 @@
 import React, { lazy, Suspense } from "react"
-import dadosIniciais from "./data/dados_iniciais.json"
+import dadosIniciais from "../../data/dados_iniciais.json"
 
 // import Footer from "./components/Footer"
 // import BannerMain from "./components/BannerMain"
 // import Carousel from "./components/Carousel"
 // import Menu from "./components/Menu"
 
-const Footer = lazy(() => import("./components/Footer"))
-const BannerMain = lazy(() => import("./components/BannerMain"))
-const Carousel = lazy(() => import("./components/Carousel"))
-const Menu = lazy(() => import("./components/Menu"))
+const Footer = lazy(() => import("../../components/Footer"))
+const BannerMain = lazy(() => import("../../components/BannerMain"))
+const Carousel = lazy(() => import("../../components/Carousel"))
+const Menu = lazy(() => import("../../components/Menu"))
 
 const renderLoader = () => (
   <div className="loading">
     <p>Carregando...</p>
   </div>
 )
-const App = () => {
+const Home = () => {
   return (
     <Suspense fallback={renderLoader()}>
       <div style={{ background: "#141414" }}>
@@ -48,4 +48,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Home
