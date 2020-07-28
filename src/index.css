@@ -62,6 +62,10 @@ a {
   background-color: #494949;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5e5e5e;
+}
+
 /* 404 */
 main .page404 {
   text-align: center;
