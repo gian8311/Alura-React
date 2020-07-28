@@ -1,15 +1,10 @@
 {
-  "categorias": [
-    {
+  "categorias": [{
       "titulo": "Front End",
       "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      },
-      "videos": [
-        {
+      "cor": "#BB6BD9",
+
+      "videos": [{
           "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
           "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
         },
@@ -40,18 +35,13 @@
         {
           "titulo": "Base para aprender os frameworks",
           "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
+        }
       ]
     },
     {
       "titulo": "Back End",
       "cor": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      },
-      "videos": [
-        {
+      "videos": [{
           "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
           "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
         },
@@ -66,7 +56,7 @@
         {
           "titulo": "API: Dicionário do Programador",
           "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
+        },
         {
           "titulo": "Usando Git Direito",
           "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
@@ -76,12 +66,8 @@
     {
       "titulo": "Data Science e Inteligência Artificial",
       "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
-      "videos": [
-        {
+
+      "videos": [{
           "titulo": "Teste de Turing",
           "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
         },
@@ -102,8 +88,7 @@
     {
       "titulo": "Filmes",
       "cor": "orange",
-      "videos": [
-        {
+      "videos": [{
           "titulo": "Interestellar",
           "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
         },
@@ -124,12 +109,8 @@
     {
       "titulo": "Games",
       "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
-      "videos": [
-        {
+
+      "videos": [{
           "titulo": "Final Fantasy 7",
           "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
         },
@@ -154,12 +135,8 @@
     {
       "titulo": "Aprendendo a aprender tecnologia",
       "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
-      "videos": [
-        {
+
+      "videos": [{
           "titulo": "Como estudar melhor?",
           "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
         },
