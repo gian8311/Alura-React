@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
-import Home from "./pages/home"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
+import Home from "./pages/home"
 import CadastroVideo from "./pages/cadastro/video"
 import CadastroCategoria from "./pages/cadastro/categoria"
 import Pagina404 from "./pages/page404"
