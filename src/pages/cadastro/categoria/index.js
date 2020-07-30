@@ -1,7 +1,7 @@
-import React, { lazy, Suspense, useState } from "react"
+import React, { lazy, Suspense, useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import RenderLoader from "../../../components/RenderLoader"
-import "./Categoria.css"
+import "./categoria.css"
 import FormField from "../../../components/FormField"
 import Button from "../../../components/Button"
 
@@ -28,6 +28,33 @@ function CadastroCategoria() {
     setValue(target.getAttribute("name"), target.value)
   }
 
+  useEffect(() => {
+    const URL_CATEGORIAS = "http://localhost:5050/categorias"
+
+    fetch(URL_CATEGORIAS).then(async (serverResponse) => {
+      const resposta = await serverResponse.json()
+      setCategorias([...resposta])
+    })
+
+    // setTimeout(() => {
+    //   setCategorias([
+    //     ...categorias,
+    //     {
+    //       id: 1,
+    //       nome: "Front End",
+    //       decricao: "Categoria",
+    //       cor: "#CBD1FF",
+    //     },
+
+    //     {
+    //       id: 1,
+    //       nome: "Back End",
+    //       decricao: "Categoria massa",
+    //       cor: "#C2AAB5",
+    //     },
+    //   ])
+    // }, 3 * 1000)
+  }, [])
   return (
     <Suspense fallback={RenderLoader()}>
       <PageDefault>
@@ -72,6 +99,7 @@ function CadastroCategoria() {
 
           <Button type="submit">Cadastrar</Button>
         </form>
+        {categorias.length === 0 && <div className="loading">Loading...</div>}
         <ul>
           {categorias.map((categoria, index) => {
             return <li key={`${categoria.nome}${index}`}>{categoria.nome}</li>
