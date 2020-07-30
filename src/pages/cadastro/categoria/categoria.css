@@ -1,0 +1,8 @@
+a {
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+a:hover {
+    opacity: 0.85;
+}
