@@ -13,7 +13,7 @@ function FormField({
   if (inputTag === "input") {
     return (
       <div className={className}>
-        <label>{label}</label>
+        <label htmlFor={id}>{label}</label>
         <input
           type={type}
           name={name}
@@ -26,7 +26,7 @@ function FormField({
   } else if (inputTag === "textarea") {
     return (
       <div className={className}>
-        <label>{label}</label>
+        <label htmlFor={id}>{label}</label>
         <textarea
           type={type}
           name={name}
