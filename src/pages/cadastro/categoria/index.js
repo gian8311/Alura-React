@@ -27,7 +27,6 @@ function CadastroCategoria() {
     const target = event.target
     setValue(target.getAttribute("name"), target.value)
   }
-
   useEffect(() => {
     const URL_CATEGORIAS = "http://localhost:5050/categorias"
 
@@ -35,25 +34,6 @@ function CadastroCategoria() {
       const resposta = await serverResponse.json()
       setCategorias([...resposta])
     })
-
-    // setTimeout(() => {
-    //   setCategorias([
-    //     ...categorias,
-    //     {
-    //       id: 1,
-    //       nome: "Front End",
-    //       decricao: "Categoria",
-    //       cor: "#CBD1FF",
-    //     },
-
-    //     {
-    //       id: 1,
-    //       nome: "Back End",
-    //       decricao: "Categoria massa",
-    //       cor: "#C2AAB5",
-    //     },
-    //   ])
-    // }, 3 * 1000)
   }, [])
   return (
     <Suspense fallback={RenderLoader()}>
@@ -99,7 +79,11 @@ function CadastroCategoria() {
 
           <Button type="submit">Cadastrar</Button>
         </form>
-        {categorias.length === 0 && <div className="loading">Loading...</div>}
+
+        {categorias.length === 0 && (
+          <div className="LoadingList"> Loading...</div>
+        )}
+
         <ul>
           {categorias.map((categoria, index) => {
             return <li key={`${categoria.nome}${index}`}>{categoria.nome}</li>
