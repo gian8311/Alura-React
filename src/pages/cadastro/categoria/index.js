@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import RenderLoader from "../../../components/RenderLoader"
 import "./Categoria.css"
 import FormField from "../../../components/FormField"
+import Button from "../../../components/Button"
 
 const PageDefault = lazy(() => import("../../../components/PageDefault"))
 
@@ -69,7 +70,7 @@ function CadastroCategoria() {
             label="Cor"
           />
 
-          <button type="submit">Cadastrar</button>
+          <Button type="submit">Cadastrar</Button>
         </form>
         <ul>
           {categorias.map((categoria, index) => {
