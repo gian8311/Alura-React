@@ -4,12 +4,10 @@
 }
 
 :root {
-  --primary: #6A3A8B;
-  --black: #000000;
+  --primary: #82307A;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #E5E5E5;
-  --white: #FFFFFF;
   --backgroundColor: #141414;
 }
 

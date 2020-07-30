@@ -1,10 +1,15 @@
 import React, { lazy, Suspense } from "react"
 import dadosIniciais from "../../data/dados_iniciais.json"
 import RenderLoader from "../../components/RenderLoader"
+import styled from "styled-components"
 // import Footer from "./components/Footer"
 // import BannerMain from "./components/BannerMain"
 // import Carousel from "./components/Carousel"
 // import Menu from "./components/Menu"
+
+const AppWrapper = styled.div`
+  background: #141414;
+`
 
 const Footer = lazy(() => import("../../components/Footer"))
 const BannerMain = lazy(() => import("../../components/BannerMain"))
@@ -14,7 +19,7 @@ const Menu = lazy(() => import("../../components/Menu"))
 const Home = () => {
   return (
     <Suspense fallback={RenderLoader()}>
-      <div style={{ background: "#141414" }}>
+      <AppWrapper>
         <Menu />
 
         <BannerMain
@@ -38,7 +43,7 @@ const Home = () => {
         <Carousel category={dadosIniciais.categorias[5]} />
 
         <Footer />
-      </div>
+      </AppWrapper>
     </Suspense>
   )
 }
