@@ -28,7 +28,11 @@ function CadastroCategoria() {
     setValue(target.getAttribute("name"), target.value)
   }
   useEffect(() => {
-    const URL_CATEGORIAS = "http://localhost:5050/categorias"
+    const isLocalHost = window.location.hostname.includes("localhost")
+
+    const URL_CATEGORIAS = isLocalHost
+      ? "http://localhost:8080/categorias"
+      : "https://albflix.herokuapp.com/categorias"
 
     fetch(URL_CATEGORIAS).then(async (serverResponse) => {
       const resposta = await serverResponse.json()
